@@ -1,12 +1,16 @@
+
 <?php
-// Configuración de la base de datos de Railway
-$host = "viaduct.proxy.rlwy.net";
-$port = 3306;
+// CONFIGURACIÓN PARA CONEXIÓN INTERNA (Web en Railway -> BD en Railway)
+$host = "mysql.railway.internal"; // CAMBIA ESTO
+$port = 3306;                     // EL PUERTO INTERNO ES SIEMPRE 3306
 $user = "root";
-$password = "rclNByooYtLqkTnHFgfGwITfXXvsLovN";
+$password = "rclNByooYtLqkTnHFgfGwITfXXvsLovN"; // Tu password es correcta
 $database = "railway";
 
-// 1 y 2. Crear la conexión usando mysqli y configurando el charset a utf8mb4
+
+
+
+
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT); // Para que lance excepciones manejables
 try {
     $conexion = new mysqli($host, $user, $password, $database, $port);
