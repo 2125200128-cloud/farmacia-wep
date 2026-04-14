@@ -1,7 +1,6 @@
 {
     "require": {
-        "php": ">=8.0",
-        "ext-mysqli": "*",
-        "ext-pdo_mysql": "*"
+        "ext-pdo_mysql": "*",
+        "ext-mysqli": "*"
     }
 }
